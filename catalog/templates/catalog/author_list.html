@@ -1,0 +1,37 @@
+{% extends "base_generic.html" %}
+
+{%  block content %}
+
+<div class="main-cont">
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'index' %}">Main Page</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Author list:</li>
+        </ol>
+    </nav>
+    <div class="container">
+    {%  if author_list %}
+       {% for author in author_list %}
+
+        <div class="row position-relative">
+            <div class="col-lg p-4 m-2 position-static cards ">
+                <a class="stretched-link" href="{{ author.get_absolute_url }}"></a>
+                <h4 class="">{{ author.first_name }} {{ author.last_name }}</h4>
+                <p class="last-upd"> {{ author.date_of_birth }} - {{ author.date_of_death }}</p>
+{#                <p class="">{{book.summary|truncatewords:30}}</p>#}
+{#                <p class="last-upd">Genre : {{ book.display_genre}}</p>#}
+
+            </div>
+        </div>
+            {% endfor %}
+    {%  else %}
+    <h1>There are no authors here</h1>
+    {%  endif %}
+
+    </div>
+
+</div>
+
+
+{% endblock %}

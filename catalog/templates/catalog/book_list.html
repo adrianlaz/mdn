@@ -1,0 +1,36 @@
+{% extends "base_generic.html" %}
+
+{%  block content %}
+
+<div class="main-cont">
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'index' %}">Main Page</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Books list:</li>
+        </ol>
+    </nav>
+    <div class="container">
+    {%  if book_list %}
+       {% for book in book_list %}
+
+        <div class="row position-relative">
+            <div class="col-lg p-4 m-2 position-static cards ">
+                <a class="stretched-link" href="{{ book.get_absolute_url }}"></a>
+                <h4 class="">{{ book.title }}</h4>
+                <p class="last-upd"> Written by: {{ book.author }}</p>
+                <p class="">{{book.summary|truncatewords:30}}</p>
+                <p class="last-upd">Genre : {{ book.display_genre}}</p>
+
+            </div>
+        </div>
+    {% endfor %}
+    {%  else %}
+    <h1>There are no books here</h1>
+    {%  endif %}
+
+    </div>
+
+</div>
+
+{% endblock %}

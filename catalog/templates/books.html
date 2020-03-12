@@ -1,0 +1,16 @@
+{% extends "base_generic.html" %}
+
+
+{% block content %}
+    <p>Number of books:</p>
+{{ num_books }}
+
+{% for book in books %}
+<h2>
+  <a href="{{ book.get_absolute_url }}">
+    {{ book.headline|upper }}
+  </a>
+</h2>
+<p>{{ book.Book.Title}}</p>
+{% endfor %}
+{% endblock %}

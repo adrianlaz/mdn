@@ -1,0 +1,180 @@
+html {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+body {
+    background-color: rgba(248, 248, 252);
+}
+
+.head1 {
+    background-image: url("../img/header.jpg");
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 60px;
+
+}
+
+.logo {
+    max-height: 70px;
+}
+
+.navbar .navbar-nav {
+    margin-left: auto;
+}
+
+.nav1 {
+    max-width: 1299px;
+    margin: auto;
+
+}
+
+.navtext {
+    text-align: center;
+    color: white;
+    padding-bottom: 30px;
+}
+
+
+.searchbar {
+    background-color: rgba(254, 254, 254, 0.15);
+    border-color: rgba(254, 254, 254, 0.15);
+    width: 800px;
+    border-radius: 4px;
+    padding-left: 40px;
+    height: 40px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 0.7; /* Firefox */
+}
+
+.searchbar:focus {
+    background-color: rgba(254, 254, 254, 0.25);
+    border-color: rgba(254, 254, 254, 0.25);
+    color: rgba(254, 254, 254, 0.25);
+    outline-width: 0
+}
+
+.cards {
+    background-color: white;
+    box-shadow: 1px 1px rgba(24, 39, 166, 0.10);
+}
+
+.cards:hover {
+    background-color: white;
+    box-shadow: 3px 3px 3px rgba(24, 39, 166, 0.15);
+}
+
+.cards i, .fa-cog {
+    font-size: 70px;
+    /*font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));*/
+    font-size: calc(40px + (50 - 40) * ((100vw - 300px) / (1600 - 300)));
+    color: rgba(78, 51, 180, 0.76);
+}
+
+.cards h3 {
+    color: rgba(78, 51, 180, 0.76);
+    /*font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));*/
+    font-size: 20px;
+    font-size: calc(15px + (30 - 15) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.faq {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.accordion {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.accordion .card {
+    border-radius: 20px;
+}
+
+.accordion .btn-link {
+    color: rgba(78, 51, 180, 0.76);
+}
+
+footer {
+    background-color: white;
+    padding: 50px 0;
+    margin-top: 50px;
+
+
+}
+
+.foot-nav {
+    margin: auto;
+    text-align: center;
+}
+
+.foot-nav li {
+    display: inline;
+}
+
+footer i {
+    font-size: 25px;
+}
+
+footer a {
+    color: grey;
+    font-size: 15px;
+    padding: 0 10px;
+}
+
+footer a:hover {
+    color: grey;
+    font-size: 15px;
+}
+
+.main-cont {
+    max-width: 1099px;
+    margin: auto;
+}
+
+.breadcrumb {
+    background-color: transparent;
+}
+
+.article {
+    padding: 60px 120px;
+
+}
+
+.desc {
+    color: grey;
+    font-weight: lighter;
+}
+
+.container h4 {
+    color: rgba(78, 51, 180, 0.76);
+}
+
+.last-upd {
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+div.img-a {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin:40px auto 40px
+}
+
+div.caption {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.code {
+    font-family: "Courier New", Courier, monospace border;
+    border: 1px solid lightgrey;
+    background-color: rgba(0,0,0,0.02);
+    border-radius: 10px;
+
+}
