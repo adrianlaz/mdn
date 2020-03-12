@@ -28,7 +28,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY','pbirrp!!#5xpyp7t%2!-)d9@@x05tes
 # DEBUG = True
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['sheltered-lowlands-50093.herokuapp.com']
 
 # Heroku: Update database configuration from $DATABASE_URL.
 
